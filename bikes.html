@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop Bikes | Spoke & Gear Bicycle Co.</title>
+<meta name="description" content="Browse road, mountain and kids' bikes at Spoke & Gear Bicycle Co in Ashbrook — filter by category and budget.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='17' fill='none' stroke='%230E376C' stroke-width='3'/%3E%3Ccircle cx='20' cy='20' r='4' fill='%23E6542C'/%3E%3C/svg%3E">
+<script>(function(){try{var t=localStorage.getItem('sg_theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);document.documentElement.setAttribute('dir',localStorage.getItem('sg_dir')||'ltr');}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="antialiased" style="font-family:'Manrope',sans-serif;">
+
+<div id="page-loader"><div class="loader-spoke" role="status" aria-label="Loading"></div></div>
+<a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[999] focus:bg-[rgb(var(--secondary))] focus:text-white focus:px-4 focus:py-2 focus:rounded-lg">Skip to content</a>
+
+<header class="site-header">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex xl:hidden items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-2" aria-label="Spoke and Gear home">
+        <svg width="28" height="28" viewBox="0 0 40 40" fill="none" class="shrink-0"><circle cx="20" cy="20" r="17" stroke="rgb(var(--primary))" stroke-width="2.5"/><circle cx="20" cy="20" r="3.2" fill="rgb(var(--secondary))"/><g stroke="rgb(var(--primary))" stroke-width="1.4" opacity=".85"><line x1="20" y1="20" x2="20" y2="4"/><line x1="20" y1="20" x2="32.5" y2="12"/><line x1="20" y1="20" x2="32.5" y2="28"/><line x1="20" y1="20" x2="20" y2="36"/><line x1="20" y1="20" x2="7.5" y2="28"/><line x1="20" y1="20" x2="7.5" y2="12"/></g></svg>
+        <span class="font-display text-lg">SPOKE<span class="text-[rgb(var(--secondary))]">&amp;</span>GEAR</span>
+      </a>
+      <div class="flex items-center gap-1.5">
+        <button id="hamburger-btn" class="icon-btn" aria-expanded="false" aria-controls="mobile-panel" aria-label="Toggle menu"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      </div>
+    </div>
+    <div class="hidden xl:flex items-center justify-between h-20 gap-6">
+      <a href="index.html" class="flex items-center gap-2 shrink-0" aria-label="Spoke and Gear home">
+        <svg width="32" height="32" viewBox="0 0 40 40" fill="none" class="shrink-0"><circle cx="20" cy="20" r="17" stroke="rgb(var(--primary))" stroke-width="2.5"/><circle cx="20" cy="20" r="3.2" fill="rgb(var(--secondary))"/><g stroke="rgb(var(--primary))" stroke-width="1.4" opacity=".85"><line x1="20" y1="20" x2="20" y2="4"/><line x1="20" y1="20" x2="32.5" y2="12"/><line x1="20" y1="20" x2="32.5" y2="28"/><line x1="20" y1="20" x2="20" y2="36"/><line x1="20" y1="20" x2="7.5" y2="28"/><line x1="20" y1="20" x2="7.5" y2="12"/></g></svg>
+        <span class="font-display text-xl whitespace-nowrap">SPOKE<span class="text-[rgb(var(--secondary))]">&amp;</span>GEAR</span>
+      </a>
+      <nav class="flex items-center gap-6">
+        <div class="relative" data-dropdown>
+          <button type="button" class="nav-link flex items-center gap-1" data-dropdown-btn aria-haspopup="true" aria-expanded="false">
+            Home
+            <svg class="dropdown-caret" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="dropdown-panel">
+            <a href="index.html" class="dropdown-link">Home 1</a>
+            <a href="home-2.html" class="dropdown-link">Home 2</a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="bikes.html" class="nav-link">Bikes</a>
+        <a href="services.html" class="nav-link">Repairs</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="flex items-center gap-2 pl-4 border-l border-[rgb(var(--border))] shrink-0">
+        <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode"><span data-theme-icon><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span></button>
+        <button class="icon-btn" data-dir-toggle aria-label="Toggle text direction"><span class="text-xs font-bold" data-dir-label>RTL</span></button>
+        <span data-auth-slot></span>
+        <a href="services.html#book" class="btn btn-primary btn-sm">Book a Repair <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-panel" class="xl:hidden">
+    <nav class="flex flex-col gap-1 px-4 pt-4">
+      <a href="index.html" class="mobile-link px-3 py-2.5 rounded-lg font-semibold hover:bg-[rgb(var(--surface-2))]">Home</a>
+      <a href="home-2.html" class="mobile-link px-3 py-2.5 rounded-lg font-semibold hover:bg-[rgb(var(--surface-2))]">Home 2</a>
+      <a href="about.html" class="mobile-link px-3 py-2.5 rounded-lg font-semibold hover:bg-[rgb(var(--surface-2))]">About</a>
+      <a href="bikes.html" class="mobile-link px-3 py-2.5 rounded-lg font-semibold hover:bg-[rgb(var(--surface-2))]">Bikes</a>
+      <a href="services.html" class="mobile-link px-3 py-2.5 rounded-lg font-semibold hover:bg-[rgb(var(--surface-2))]">Repairs</a>
+      <a href="gallery.html" class="mobile-link px-3 py-2.5 rounded-lg font-semibold hover:bg-[rgb(var(--surface-2))]">Gallery</a>
+      <a href="faq.html" class="mobile-link px-3 py-2.5 rounded-lg font-semibold hover:bg-[rgb(var(--surface-2))]">FAQ</a>
+      <a href="contact.html" class="mobile-link px-3 py-2.5 rounded-lg font-semibold hover:bg-[rgb(var(--surface-2))]">Contact</a>
+    </nav>
+    <div class="p-4 flex items-center flex-wrap justify-between gap-3">
+      <div class="flex items-center gap-1.5" id="mobile-icons-group">
+        <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode"><span data-theme-icon><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span></button>
+        <button class="icon-btn" data-dir-toggle aria-label="Toggle text direction"><span class="text-xs font-bold" data-dir-label>RTL</span></button>
+      </div>
+      <a href="services.html#book" class="btn btn-primary w-full justify-center">Book a Repair</a>
+      <span data-auth-slot class="flex-1 flex justify-end"></span>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+<section class="relative overflow-hidden">
+  <img src="assets/images/hero-cloud-climb.jpg" alt="Road cyclist climbing a mountain pass above the clouds" class="absolute inset-0 w-full h-full object-cover" loading="eager">
+  <div class="absolute inset-0 bg-gradient-to-r from-[#0A101C]/95 via-[#0A101C]/82 to-[#0A101C]/45"></div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-16">
+    <div class="max-w-xl">
+      <nav class="text-white/70 text-xs mb-4" aria-label="Breadcrumb"><a href="index.html" class="hover:text-white">Home</a> <span class="mx-1">/</span> <span class="text-white">Bikes</span></nav>
+      <span class="inline-block text-[rgb(var(--secondary))] text-xs font-bold uppercase tracking-widest mb-3">Road &middot; Mountain &middot; Kids'</span>
+      <h1 class="font-display text-3xl sm:text-4xl text-white mb-4">Our Bikes</h1>
+      <p class="text-white/90 leading-relaxed">Hand-checked by our mechanics before they ever hit the sales floor &mdash; and assembled right here in our workshop.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Find Your Fit (icon-column guide, no cards) -->
+<section class="py-16 sm:py-20 bg-[rgb(var(--surface-2))]">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-xl mx-auto mb-14" data-aos="fade-up">
+      <p class="text-[rgb(var(--secondary))] font-bold uppercase tracking-widest text-xs mb-3">Not Sure Where To Start?</p>
+      <h2 class="font-display text-3xl sm:text-4xl">Find your fit in three questions</h2>
+    </div>
+    <div class="grid sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-[rgb(var(--border))]">
+      <div class="px-6 py-8 sm:py-0 text-center" data-aos="fade-up">
+        <div class="w-14 h-14 rounded-full bg-[rgb(var(--primary)/.1)] flex items-center justify-center mx-auto mb-5 text-[rgb(var(--primary))]"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M4 20l6-16h4l6 16M8 14h8"/></svg></div>
+        <h3 class="font-bold text-lg mb-2">Mostly paved roads?</h3>
+        <p class="text-sm text-[rgb(var(--ink-soft))] mb-5">Commuting, fitness rides, or century-ride goals &mdash; go Road.</p>
+        <button type="button" class="text-[rgb(var(--primary))] font-semibold text-sm" data-goto-category="road">Shop Road Bikes &rarr;</button>
+      </div>
+      <div class="px-6 py-8 sm:py-0 text-center" data-aos="fade-up" data-aos-delay="80">
+        <div class="w-14 h-14 rounded-full bg-[rgb(var(--status-ready)/.14)] flex items-center justify-center mx-auto mb-5 text-[rgb(var(--status-ready))]"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3 20l5-9 4 5 3-5 6 9M3 20h18"/></svg></div>
+        <h3 class="font-bold text-lg mb-2">Trails, dirt or ridgelines?</h3>
+        <p class="text-sm text-[rgb(var(--ink-soft))] mb-5">From cross-country to enduro &mdash; go Mountain.</p>
+        <button type="button" class="text-[rgb(var(--status-ready))] font-semibold text-sm" data-goto-category="mountain">Shop Mountain Bikes &rarr;</button>
+      </div>
+      <div class="px-6 py-8 sm:py-0 text-center" data-aos="fade-up" data-aos-delay="160">
+        <div class="w-14 h-14 rounded-full bg-[rgb(var(--secondary)/.12)] flex items-center justify-center mx-auto mb-5 text-[rgb(var(--secondary))]"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2l2.4 6.6L21 11l-6.6 2.4L12 20l-2.4-6.6L3 11l6.6-2.4z"/></svg></div>
+        <h3 class="font-bold text-lg mb-2">Shopping for a kid?</h3>
+        <p class="text-sm text-[rgb(var(--ink-soft))] mb-5">Balance bikes through first mountain bikes &mdash; go Kids'.</p>
+        <button type="button" class="text-[rgb(var(--secondary))] font-semibold text-sm" data-goto-category="kids">Shop Kids' Bikes &rarr;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Filter bar -->
+<section id="filter-tabs" class="py-6 border-b border-[rgb(var(--border))] sticky top-16 xl:top-20 z-40 bg-[rgb(var(--bg))]/95 backdrop-blur">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-4">
+    <div class="flex flex-wrap gap-2" role="tablist" aria-label="Filter bikes by category">
+      <button class="tab-btn is-active px-4 py-2 rounded-full font-semibold text-sm border border-[rgb(var(--border))]" data-filter-btn="all" role="tab" aria-selected="true">All Bikes</button>
+      <button class="tab-btn px-4 py-2 rounded-full font-semibold text-sm border border-[rgb(var(--border))]" data-filter-btn="road" role="tab" aria-selected="false">Road</button>
+      <button class="tab-btn px-4 py-2 rounded-full font-semibold text-sm border border-[rgb(var(--border))]" data-filter-btn="mountain" role="tab" aria-selected="false">Mountain</button>
+      <button class="tab-btn px-4 py-2 rounded-full font-semibold text-sm border border-[rgb(var(--border))]" data-filter-btn="kids" role="tab" aria-selected="false">Kids'</button>
+    </div>
+    <p class="text-sm text-[rgb(var(--ink-soft))] hidden sm:block">18 bikes in stock or available to order</p>
+  </div>
+</section>
+
+<!-- Catalog (paginated, bike-card design) -->
+<section id="catalog" class="py-16 sm:py-20 scroll-mt-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10" data-paginate data-page-size="6">
+
+      <!-- ROAD -->
+      <div class="bike-card cat-road" data-filter-card="road">
+        <div class="bike-card-media">
+          <span class="ribbon">Road</span>
+          <span class="absolute top-3 right-3 bg-[rgb(var(--secondary))] text-white text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full z-10">Best Seller</span>
+          <img src="assets/images/bike-road-black-studio.jpg" alt="Velostrada Alu Road bike, matte black finish, studio shot" class="w-full h-full object-cover" loading="lazy">
+        </div>
+        <span class="price-badge">$1,299</span>
+        <div class="bike-card-body">
+          <h3 class="font-bold text-lg mb-2">Velostrada Alu Road</h3>
+          <p class="text-sm text-[rgb(var(--ink-soft))] mb-6 flex-1">6061 alloy frame, Shimano Claris 16-speed, tubeless-ready wheels.</p>
+          <a href="bike-details.html" class="text-[rgb(var(--secondary))] font-semibold text-sm inline-flex items-center gap-1">Details <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <div class="bike-card cat-road" data-filter-card="road">
+        <div class="bike-card-media">
+          <span class="ribbon">Road</span>
+          <img src="assets/images/bike-fixie-teal-wall.jpg" alt="Meridian City Road bike leaning against a dark wall" class="w-full h-full object-cover" loading="lazy">
+        </div>
+        <span class="price-badge">$1,050</span>
+        <div class="bike-card-body">
+          <h3 class="font-bold text-lg mb-2">Meridian City Road</h3>
+          <p class="text-sm text-[rgb(var(--ink-soft))] mb-6 flex-1">Nimble city geometry with fender and rack mounts for daily riding.</p>
+          <a href="contact.html" class="text-[rgb(var(--secondary))] font-semibold text-sm inline-flex items-center gap-1">Enquire <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <div class="bike-card cat-road" data-filter-card="road">
+        <div class="bike-card-media">
+          <span class="ribbon">Road</span>
+          <img src="assets/images/bike-orange-wall-yellow.jpg" alt="Solstice Track single-speed bike with yellow wheels against an orange wall" class="w-full h-full object-cover" loading="lazy">
+        </div>
+        <span class="price-badge">$780</span>
+        <div class="bike-card-body">
+          <h3 class="font-bold text-lg mb-2">Solstice Track Single-Speed</h3>
+          <p class="text-sm text-[rgb(var(--ink-soft))] mb-6 flex-1">Flip-flop hub, zero-maintenance chain drive for daily commuting.</p>
+          <a href="contact.html" class="text-[rgb(var(--secondary))] font-semibold text-sm inline-flex items-center gap-1">Enquire <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <div class="bike-card cat-road" data-filter-card="road">
+        <div class="bike-card-media">
+          <span class="ribbon">Road</span>
+          <img src="assets/images/bike-white-wall.jpg" alt="Harbor Commuter flat-bar road bike leaning against a white wall" class="w-full h-full object-cover" loading="lazy">
+        </div>
+        <span class="price-badge">$920</span>
+        <div class="bike-card-body">
+          <h3 class="font-bold text-lg mb-2">Harbor Commuter Flat-Bar</h3>
+          <p class="text-sm text-[rgb(var(--ink-soft))] mb-6 flex-1">Upright flat-bar geometry with disc brakes &mdash; built for mixed commutes.</p>
+          <a href="contact.html" class="text-[rgb(var(--secondary))] font-semibold text-sm inline-flex items-center gap-1">Enquire <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <div class="bike-card cat-road" data-filter-card="road">
+        <div class="bike-card-media">
+          <span class="ribbon">Road</span>
+          <div class="w-full h-full bg-gradient-to-br from-[rgb(var(--primary))] to-[#173F73] flex items-center justify-center relative">
+            <svg width="90" height="90" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.1" opacity=".7"><circle cx="6" cy="17" r="3.5"/><circle cx="18" cy="17" r="3.5"/><path stroke-linecap="round" stroke-linejoin="round" d="M6 17l4-9h5l3 9M10 8h3M6 17l7-6"/></svg>
+            <span class="absolute top-3 left-3 bg-white/15 text-white text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Ask In-Store</span>
+          </div>
+        </div>
+        <span class="price-badge">$2,650</span>
+        <div class="bike-card-body">
+          <h3 class="font-bold text-lg mb-2">Apex Aero Road</h3>
+          <p class="text-sm text-[rgb(var(--ink-soft))] mb-6 flex-1">Carbon aero frame, Shimano 105 groupset &mdash; order in your size and colour.</p>
+          <a href="contact.html" class="text-[rgb(var(--secondary))] font-semibold text-sm inline-flex items-center gap-1">Enquire <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <div class="bike-card cat-road" data-filter-card="road">
+        <div class="bike-card-media">
+          <span class="ribbon">Road</span>
+          <div class="w-full h-full bg-gradient-to-br from-[#173F73] to-[rgb(var(--primary))] flex items-center justify-center relative">
+            <svg width="90" height="90" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.1" opacity=".7"><circle cx="6" cy="17" r="3.5"/><circle cx="18" cy="17" r="3.5"/><path stroke-linecap="round" stroke-linejoin="round" d="M6 17l4-9h5l3 9M10 8h3M6 17l7-6"/></svg>
+            <span class="absolute top-3 left-3 bg-white/15 text-white text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Ask In-Store</span>
+          </div>
+        </div>
+        <span class="price-badge">$1,180</span>
+        <div class="bike-card-body">
+          <h3 class="font-bold text-lg mb-2">Classic Steel Tourer</h3>
+          <p class="text-sm text-[rgb(var(--ink-soft))] mb-6 flex-1">Chromoly steel frame with rack and pannier mounts for long-haul touring.</p>
+          <a href="contact.html" class="text-[rgb(var(--secondary))] font-semibold text-sm inline-flex items-center gap-1">Enquire <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <!-- MOUNTAIN -->
+      <div class="bike-card cat-mountain" data-filter-card="mountain">
+        <div class="bike-card-media">
+          <span class="ribbon">Mountain</span>
+          <span class="absolute top-3 right-3 bg-[rgb(var(--status-ready))] text-white text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full z-10">Featured</span>
+          <img src="assets/images/bike-mtb-cube-beach.jpg" alt="Ridgeback Trailhawk full-suspension mountain bike on a rocky shoreline" class="w-full h-full object-cover" loading="lazy">
+        </div>
+        <span class="price-badge">$1,899</span>
+        <div class="bike-card-body">
+          <h3 class="font-bold text-lg mb-2">Ridgeback Trailhawk MTB</h3>
+          <p class="text-sm text-[rgb(var(--ink-soft))] mb-6 flex-1">150mm full-suspension travel, hydraulic disc brakes, 1x12 drivetrain.</p>
+          <a href="bike-details.html" class="text-[rgb(var(--secondary))] font-semibold text-sm inline-flex items-center gap-1">Details <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <div class="bike-card cat-mountain" data-filter-card="mountain">
+        <div class="bike-card-media">
+          <span class="ribbon">Mountain</span>
+          <img src="assets/images/bike-mtb-bulls-park.jpg" alt="Summit Wild Cup Trail mountain bike parked beside a park path" class="w-full h-full object-cover" loading="lazy">
+        </div>
+        <span class="price-badge">$1,650</span>
+        <div class="bike-card-body">
+          <h3 class="font-bold text-lg mb-2">Summit Wild Cup Trail</h3>
+          <p class="text-sm text-[rgb(var(--ink-soft))] mb-6 flex-1">Air-sprung fork, tubeless tyres &mdash; built for Ashbrook's ridge trails.</p>
+          <a href="contact.html" class="text-[rgb(var(--secondary))] font-semibold text-sm inline-flex items-center gap-1">Enquire <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <div class="bike-card cat-mountain" data-filter-card="mountain">
+        <div class="bike-card-media">
+          <span class="ribbon">Mountain</span>
+          <div class="w-full h-full bg-gradient-to-br from-[rgb(var(--status-ready))] to-[#0E6B45] flex items-center justify-center relative">
+            <svg width="90" height="90" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.1" opacity=".7"><circle cx="6" cy="17" r="3.5"/><circle cx="18" cy="17" r="3.5"/><path stroke-linecap="round" stroke-linejoin="round" d="M6 17l4-9h5l3 9M10 8h3M6 17l7-6"/></svg>
+            <span class="absolute top-3 left-3 bg-white/15 text-white text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Ask In-Store</span>
+          </div>
+        </div>
+        <span class="price-badge">$2,400</span>
+        <div class="bike-card-body">
+          <h3 class="font-bold text-lg mb-2">Boulder Enduro Full-Squish</h3>
+          <p class="text-sm text-[rgb(var(--ink-soft))] mb-6 flex-1">170mm travel, coil shock option &mdash; special order, arrives in 2&ndash;3 weeks.</p>
+          <a href="contact.html" class="text-[rgb(var(--secondary))] font-semibold text-sm inline-flex items-center gap-1">Enquire <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <div class="bike-card cat-mountain" data-filter-card="mountain">
+        <div class="bike-card-media">
+          <span class="ribbon">Mountain</span>
+          <img src="assets/images/bike-mtb-trail-overlook.jpg" alt="Black hardtail mountain bike parked on a rocky trail overlook" class="w-full h-full object-cover" loading="lazy">
+        </div>
+        <span class="price-badge">$1,420</span>
+        <div class="bike-card-body">
+          <h3 class="font-bold text-lg mb-2">Ridge Runner Hardtail</h3>
+          <p class="text-sm text-[rgb(var(--ink-soft))] mb-6 flex-1">Lightweight hardtail with a 120mm fork &mdash; a nimble cross-country option.</p>
+          <a href="contact.html" class="text-[rgb(var(--secondary))] font-semibold text-sm inline-flex items-center gap-1">Enquire <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <div class="bike-card cat-mountain" data-filter-card="mountain">
+        <div class="bike-card-media">
+          <span class="ribbon">Mountain</span>
+          <div class="w-full h-full bg-gradient-to-br from-[rgb(var(--status-ready))] to-[#173F73] flex items-center justify-center relative">
+            <svg width="90" height="90" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.1" opacity=".7"><circle cx="6" cy="17" r="3.5"/><circle cx="18" cy="17" r="3.5"/><path stroke-linecap="round" stroke-linejoin="round" d="M6 17l4-9h5l3 9M10 8h3M6 17l7-6"/></svg>
+            <span class="absolute top-3 left-3 bg-white/15 text-white text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Ask In-Store</span>
+          </div>
+        </div>
+        <span class="price-badge">$3,100</span>
+        <div class="bike-card-body">
+          <h3 class="font-bold text-lg mb-2">Alpine XC Race</h3>
+          <p class="text-sm text-[rgb(var(--ink-soft))] mb-6 flex-1">Carbon race hardtail built for podium finishes, not comfort.</p>
+          <a href="contact.html" class="text-[rgb(var(--secondary))] font-semibold text-sm inline-flex items-center gap-1">Enquire <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <div class="bike-card cat-mountain" data-filter-card="mountain">
+        <div class="bike-card-media">
+          <span class="ribbon">Mountain</span>
+          <div class="w-full h-full bg-gradient-to-br from-[#173F73] to-[rgb(var(--status-ready))] flex items-center justify-center relative">
+            <svg width="90" height="90" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.1" opacity=".7"><circle cx="6" cy="17" r="3.5"/><circle cx="18" cy="17" r="3.5"/><path stroke-linecap="round" stroke-linejoin="round" d="M6 17l4-9h5l3 9M10 8h3M6 17l7-6"/></svg>
+            <span class="absolute top-3 left-3 bg-white/15 text-white text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Ask In-Store</span>
+          </div>
+        </div>
+        <span class="price-badge">$2,050</span>
+        <div class="bike-card-body">
+          <h3 class="font-bold text-lg mb-2">Canyon Fat-Tire Explorer</h3>
+          <p class="text-sm text-[rgb(var(--ink-soft))] mb-6 flex-1">4-inch tyres for sand, snow and loose gravel &mdash; goes where others can't.</p>
+          <a href="contact.html" class="text-[rgb(var(--secondary))] font-semibold text-sm inline-flex items-center gap-1">Enquire <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <!-- KIDS -->
+      <div class="bike-card cat-kids" data-filter-card="kids">
+        <div class="bike-card-media">
+          <span class="ribbon">Kids'</span>
+          <img src="assets/images/bike-kids-teal.jpg" alt="Teal Little Ranger 16 inch kids bike with training wheels and basket" class="w-full h-full object-cover" loading="lazy">
+        </div>
+        <span class="price-badge">$189</span>
+        <div class="bike-card-body">
+          <h3 class="font-bold text-lg mb-2">Little Ranger 16&Prime;</h3>
+          <p class="text-sm text-[rgb(var(--ink-soft))] mb-6 flex-1">Removable training wheels, coaster brake, and a woven front basket.</p>
+          <a href="contact.html" class="text-[rgb(var(--secondary))] font-semibold text-sm inline-flex items-center gap-1">Enquire <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <div class="bike-card cat-kids" data-filter-card="kids">
+        <div class="bike-card-media">
+          <span class="ribbon">Kids'</span>
+          <div class="w-full h-full bg-gradient-to-br from-[rgb(var(--secondary))] to-[#B33C1D] flex items-center justify-center relative">
+            <svg width="90" height="90" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.1" opacity=".7"><circle cx="6" cy="17" r="3.5"/><circle cx="18" cy="17" r="3.5"/><path stroke-linecap="round" stroke-linejoin="round" d="M6 17l4-9h5l3 9M10 8h3M6 17l7-6"/></svg>
+            <span class="absolute top-3 left-3 bg-white/15 text-white text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Ask In-Store</span>
+          </div>
+        </div>
+        <span class="price-badge">$229</span>
+        <div class="bike-card-body">
+          <h3 class="font-bold text-lg mb-2">Trailblazer 20&Prime; Kids MTB</h3>
+          <p class="text-sm text-[rgb(var(--ink-soft))] mb-6 flex-1">A scaled-down mountain bike with front suspension for young trail riders.</p>
+          <a href="contact.html" class="text-[rgb(var(--secondary))] font-semibold text-sm inline-flex items-center gap-1">Enquire <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <div class="bike-card cat-kids" data-filter-card="kids">
+        <div class="bike-card-media">
+          <span class="ribbon">Kids'</span>
+          <div class="w-full h-full bg-gradient-to-br from-[rgb(var(--status-service))] to-[#B36A14] flex items-center justify-center relative">
+            <svg width="90" height="90" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.1" opacity=".7"><circle cx="7" cy="18" r="3"/><circle cx="17" cy="18" r="3"/><path stroke-linecap="round" stroke-linejoin="round" d="M7 18l3-8h4l2 8M10 10h3"/></svg>
+            <span class="absolute top-3 left-3 bg-white/15 text-white text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Ask In-Store</span>
+          </div>
+        </div>
+        <span class="price-badge">$99</span>
+        <div class="bike-card-body">
+          <h3 class="font-bold text-lg mb-2">First Pedal 12&Prime; Balance Bike</h3>
+          <p class="text-sm text-[rgb(var(--ink-soft))] mb-6 flex-1">No pedals, no stress &mdash; the easiest way to learn balance before graduating up.</p>
+          <a href="contact.html" class="text-[rgb(var(--secondary))] font-semibold text-sm inline-flex items-center gap-1">Enquire <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <div class="bike-card cat-kids" data-filter-card="kids">
+        <div class="bike-card-media">
+          <span class="ribbon">Kids'</span>
+          <img src="assets/images/bike-kids-skyride-white.jpg" alt="White Skyride 20 inch kids hybrid bike with a rear rack" class="w-full h-full object-cover" loading="lazy">
+        </div>
+        <span class="price-badge">$249</span>
+        <div class="bike-card-body">
+          <h3 class="font-bold text-lg mb-2">Explorer 20&Prime; Kids Hybrid</h3>
+          <p class="text-sm text-[rgb(var(--ink-soft))] mb-6 flex-1">7-speed hybrid for kids ready to keep up on family rides.</p>
+          <a href="contact.html" class="text-[rgb(var(--secondary))] font-semibold text-sm inline-flex items-center gap-1">Enquire <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <div class="bike-card cat-kids" data-filter-card="kids">
+        <div class="bike-card-media">
+          <span class="ribbon">Kids'</span>
+          <img src="assets/images/bike-kids-pink-princess.jpg" alt="Pink 14 inch girls bike with a rear carrier rack" class="w-full h-full object-cover" loading="lazy">
+        </div>
+        <span class="price-badge">$159</span>
+        <div class="bike-card-body">
+          <h3 class="font-bold text-lg mb-2">Pixie 14&Prime; Girls Bike</h3>
+          <p class="text-sm text-[rgb(var(--ink-soft))] mb-6 flex-1">Low step-through frame with a chain guard and streamer grips.</p>
+          <a href="contact.html" class="text-[rgb(var(--secondary))] font-semibold text-sm inline-flex items-center gap-1">Enquire <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+      <div class="bike-card cat-kids" data-filter-card="kids">
+        <div class="bike-card-media">
+          <span class="ribbon">Kids'</span>
+          <div class="w-full h-full bg-gradient-to-br from-[#8C2E15] to-[rgb(var(--secondary))] flex items-center justify-center relative">
+            <svg width="90" height="90" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.1" opacity=".7"><circle cx="6" cy="17" r="3.5"/><circle cx="18" cy="17" r="3.5"/><path stroke-linecap="round" stroke-linejoin="round" d="M6 17l4-9h5l3 9M10 8h3M6 17l7-6"/></svg>
+            <span class="absolute top-3 left-3 bg-white/15 text-white text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">Ask In-Store</span>
+          </div>
+        </div>
+        <span class="price-badge">$169</span>
+        <div class="bike-card-body">
+          <h3 class="font-bold text-lg mb-2">Ranger Jr. 12&Prime; Boys Bike</h3>
+          <p class="text-sm text-[rgb(var(--ink-soft))] mb-6 flex-1">A tough first pedal bike with knobby tyres and a rear coaster brake.</p>
+          <a href="contact.html" class="text-[rgb(var(--secondary))] font-semibold text-sm inline-flex items-center gap-1">Enquire <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+
+    </div>
+
+    <nav data-pagination-nav class="flex items-center justify-center gap-2 mt-14" style="display:none" aria-label="Catalog pagination"></nav>
+  </div>
+</section>
+
+<!-- Riders Just Like You (alternating quote blocks, no cards, no images) -->
+<section class="py-20 sm:py-24 bg-[rgb(var(--surface-2))]">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-xl mx-auto mb-16" data-aos="fade-up">
+      <p class="text-[rgb(var(--secondary))] font-bold uppercase tracking-widest text-xs mb-3">Riders Just Like You</p>
+      <h2 class="font-display text-3xl sm:text-4xl">Bought here, still riding it</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 gap-14 sm:gap-16">
+      <div data-aos="fade-right">
+        <svg viewBox="0 0 24 24" width="30" height="30" fill="rgb(var(--secondary))" class="mb-4" aria-hidden="true"><path d="M9.5 8C6.5 8 4 10.5 4 13.5S6.5 19 9.5 19c1.2 0 2.3-.4 3.2-1.1-.4 2.6-2.6 4.6-5.2 4.6v2c4.4 0 8-3.6 8-8v-4c0-2.8-2.2-5-5-5zm10 0c-3 0-5.5 2.5-5.5 5.5s2.5 5.5 5.5 5.5c1.2 0 2.3-.4 3.2-1.1-.4 2.6-2.6 4.6-5.2 4.6v2c4.4 0 8-3.6 8-8v-4c0-2.8-2.2-5-5-5z"/></svg>
+        <p class="font-display text-xl leading-snug mb-5">The team fit me to the Velostrada in fifteen minutes flat and I've put 2,000 miles on it since.</p>
+        <p class="text-sm text-[rgb(var(--ink-soft))]"><span class="font-bold text-[rgb(var(--ink))]">Priya Anand</span> &middot; Velostrada Alu Road</p>
+      </div>
+      <div data-aos="fade-left">
+        <svg viewBox="0 0 24 24" width="30" height="30" fill="rgb(var(--secondary))" class="mb-4" aria-hidden="true"><path d="M9.5 8C6.5 8 4 10.5 4 13.5S6.5 19 9.5 19c1.2 0 2.3-.4 3.2-1.1-.4 2.6-2.6 4.6-5.2 4.6v2c4.4 0 8-3.6 8-8v-4c0-2.8-2.2-5-5-5zm10 0c-3 0-5.5 2.5-5.5 5.5s2.5 5.5 5.5 5.5c1.2 0 2.3-.4 3.2-1.1-.4 2.6-2.6 4.6-5.2 4.6v2c4.4 0 8-3.6 8-8v-4c0-2.8-2.2-5-5-5z"/></svg>
+        <p class="font-display text-xl leading-snug mb-5">My daughter picked the Little Ranger for the basket. Two years later it's still her favourite thing she owns.</p>
+        <p class="text-sm text-[rgb(var(--ink-soft))]"><span class="font-bold text-[rgb(var(--ink))]">Ines Calder</span> &middot; Little Ranger 16&Prime;</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Financing & Trade-In (dark icon band) -->
+<section class="py-20 sm:py-24 bg-black">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <p class="text-[rgb(var(--secondary))] font-bold uppercase tracking-widest text-xs mb-3" data-aos="fade-up">Make It Easier</p>
+    <h2 class="font-display text-3xl sm:text-4xl text-white mb-14" data-aos="fade-up" data-aos-delay="60">Financing and trade-in, built in</h2>
+    <div class="grid sm:grid-cols-3 gap-10 mb-14">
+      <div data-aos="fade-up">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="rgb(var(--accent))" stroke-width="1.8" class="mx-auto mb-4"><rect x="2" y="6" width="20" height="14" rx="2"/><path stroke-linecap="round" d="M2 10h20"/></svg>
+        <h3 class="font-bold text-white mb-2">0% APR Financing</h3>
+        <p class="text-sm text-white/60">Split any purchase over $500 into 6 interest-free monthly payments.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="80">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="rgb(var(--accent))" stroke-width="1.8" class="mx-auto mb-4"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v6h6M20 20v-6h-6M4.5 15a8 8 0 0 0 14 3.4M19.5 9A8 8 0 0 0 5.6 5.6"/></svg>
+        <h3 class="font-bold text-white mb-2">Trade-In Credit</h3>
+        <p class="text-sm text-white/60">Bring your current bike in for a fair-value quote toward your next one.</p>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="160">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="rgb(var(--accent))" stroke-width="1.8" class="mx-auto mb-4"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
+        <h3 class="font-bold text-white mb-2">Free Assembly</h3>
+        <p class="text-sm text-white/60">Every bike leaves fully assembled, torque-checked, and ready to ride.</p>
+      </div>
+    </div>
+    <a href="contact.html" class="btn btn-primary" data-aos="fade-up" data-aos-delay="240">Ask About Financing <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+</main>
+
+<footer class="bg-[#0A101C] text-white">
+  <div class="tread-divider"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <a href="index.html" class="flex items-center gap-2 mb-4">
+        <svg width="28" height="28" viewBox="0 0 40 40" fill="none" class="shrink-0"><circle cx="20" cy="20" r="17" stroke="white" stroke-width="2.5" opacity=".9"/><circle cx="20" cy="20" r="3.2" fill="rgb(var(--secondary))"/><g stroke="white" stroke-width="1.4" opacity=".55"><line x1="20" y1="20" x2="20" y2="4"/><line x1="20" y1="20" x2="32.5" y2="12"/><line x1="20" y1="20" x2="32.5" y2="28"/><line x1="20" y1="20" x2="20" y2="36"/><line x1="20" y1="20" x2="7.5" y2="28"/><line x1="20" y1="20" x2="7.5" y2="12"/></g></svg>
+        <span class="font-display text-lg text-white">SPOKE<span class="text-[rgb(var(--secondary))]">&amp;</span>GEAR</span>
+      </a>
+      <p class="text-sm text-white/60 leading-relaxed mb-5">Ashbrook's neighbourhood bicycle workshop — honest repairs, real-time status updates, and bikes for every rider since 2014.</p>
+      <div class="flex gap-3">
+        <a href="#" class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center hover:border-[rgb(var(--secondary))] hover:text-[rgb(var(--secondary))] transition-colors" aria-label="Instagram"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a href="#" class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center hover:border-[rgb(var(--secondary))] hover:text-[rgb(var(--secondary))] transition-colors" aria-label="Facebook"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9h3V6h-3a3 3 0 0 0-3 3v2H8v3h3v6h3v-6h3l1-3h-4V9a1 1 0 0 1 1-1z"/></svg></a>
+        <a href="#" class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center hover:border-[rgb(var(--secondary))] hover:text-[rgb(var(--secondary))] transition-colors" aria-label="Strava"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linejoin="round" d="M9 3l6 12h-4l-2-4-2 4H3zM13.5 15l2 4 2-4"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h3 class="font-bold mb-4 text-sm uppercase tracking-wider text-white/80">Shop</h3>
+      <ul class="space-y-2.5 text-sm text-white/60">
+        <li><a href="bikes.html#road" class="hover:text-white">Road Bikes</a></li>
+        <li><a href="bikes.html#mountain" class="hover:text-white">Mountain Bikes</a></li>
+        <li><a href="bikes.html#kids" class="hover:text-white">Kids' Bikes</a></li>
+        <li><a href="bike-details.html" class="hover:text-white">Featured: Trailhawk MTB</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-bold mb-4 text-sm uppercase tracking-wider text-white/80">Repair Services</h3>
+      <ul class="space-y-2.5 text-sm text-white/60">
+        <li><a href="services.html#tune-up" class="hover:text-white">Full Tune-Up</a></li>
+        <li><a href="services.html#suspension" class="hover:text-white">Suspension Service</a></li>
+        <li><a href="services.html#overhaul" class="hover:text-white">Annual Overhaul</a></li>
+        <li><a href="login.html" class="hover:text-white">Track a Repair</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-bold mb-4 text-sm uppercase tracking-wider text-white/80">Look Up a Ticket</h3>
+      <p class="text-sm text-white/60 mb-3">Enter your ticket number to sign in and view live status.</p>
+      <form id="ticket-lookup-form" class="flex gap-2">
+        <label for="ticket-lookup-input" class="sr-only">Ticket number</label>
+        <input id="ticket-lookup-input" type="text" placeholder="SG-10482" class="min-w-0 flex-1 rounded-lg bg-white/10 border border-white/15 px-3 py-2 text-sm placeholder:text-white/40 focus:outline-none focus:border-[rgb(var(--secondary))]">
+        <button class="btn btn-primary btn-sm shrink-0" type="submit">Go</button>
+      </form>
+      <p class="text-sm text-white/60 mt-5">482 Millrace Lane, Ashbrook<br>(555) 019-2244</p>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/50">
+      <p>&copy; 2026 Spoke &amp; Gear Bicycle Co. All rights reserved.</p>
+      <div class="flex items-center gap-5">
+        <a href="faq.html" class="hover:text-white">FAQ</a>
+        <a href="contact.html" class="hover:text-white">Contact</a>
+        <a href="404.html" class="hover:text-white">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+<script>
+  // Deep-link category filter via hash (#road / #mountain / #kids)
+  window.addEventListener('DOMContentLoaded', function () {
+    var hash = location.hash.replace('#', '');
+    if (['road', 'mountain', 'kids'].includes(hash)) {
+      var btn = document.querySelector('[data-filter-btn="' + hash + '"]');
+      if (btn) btn.click();
+    }
+    // "Find Your Fit" shortcut buttons: apply the real filter, then scroll to the catalog
+    document.querySelectorAll('[data-goto-category]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var cat = b.getAttribute('data-goto-category');
+        var target = document.querySelector('#filter-tabs [data-filter-btn="' + cat + '"]');
+        if (target) target.click();
+        var catalog = document.getElementById('catalog');
+        if (catalog) catalog.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  });
+</script>
+</body>
+</html>

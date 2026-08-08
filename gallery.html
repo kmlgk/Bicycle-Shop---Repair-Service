@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | Spoke & Gear Bicycle Co.</title>
+<meta name="description" content="A look inside the Spoke & Gear workshop and showroom — bikes, tools, and the Ashbrook storefront.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='17' fill='none' stroke='%230E376C' stroke-width='3'/%3E%3Ccircle cx='20' cy='20' r='4' fill='%23E6542C'/%3E%3C/svg%3E">
+<script>(function(){try{var t=localStorage.getItem('sg_theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);document.documentElement.setAttribute('dir',localStorage.getItem('sg_dir')||'ltr');}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="antialiased" style="font-family:'Manrope',sans-serif;">
+
+<div id="page-loader"><div class="loader-spoke" role="status" aria-label="Loading"></div></div>
+<a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[999] focus:bg-[rgb(var(--secondary))] focus:text-white focus:px-4 focus:py-2 focus:rounded-lg">Skip to content</a>
+
+<header class="site-header">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex xl:hidden items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-2" aria-label="Spoke and Gear home">
+        <svg width="28" height="28" viewBox="0 0 40 40" fill="none" class="shrink-0"><circle cx="20" cy="20" r="17" stroke="rgb(var(--primary))" stroke-width="2.5"/><circle cx="20" cy="20" r="3.2" fill="rgb(var(--secondary))"/><g stroke="rgb(var(--primary))" stroke-width="1.4" opacity=".85"><line x1="20" y1="20" x2="20" y2="4"/><line x1="20" y1="20" x2="32.5" y2="12"/><line x1="20" y1="20" x2="32.5" y2="28"/><line x1="20" y1="20" x2="20" y2="36"/><line x1="20" y1="20" x2="7.5" y2="28"/><line x1="20" y1="20" x2="7.5" y2="12"/></g></svg>
+        <span class="font-display text-lg">SPOKE<span class="text-[rgb(var(--secondary))]">&amp;</span>GEAR</span>
+      </a>
+      <div class="flex items-center gap-1.5">
+        <button id="hamburger-btn" class="icon-btn" aria-expanded="false" aria-controls="mobile-panel" aria-label="Toggle menu"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      </div>
+    </div>
+    <div class="hidden xl:flex items-center justify-between h-20 gap-6">
+      <a href="index.html" class="flex items-center gap-2 shrink-0" aria-label="Spoke and Gear home">
+        <svg width="32" height="32" viewBox="0 0 40 40" fill="none" class="shrink-0"><circle cx="20" cy="20" r="17" stroke="rgb(var(--primary))" stroke-width="2.5"/><circle cx="20" cy="20" r="3.2" fill="rgb(var(--secondary))"/><g stroke="rgb(var(--primary))" stroke-width="1.4" opacity=".85"><line x1="20" y1="20" x2="20" y2="4"/><line x1="20" y1="20" x2="32.5" y2="12"/><line x1="20" y1="20" x2="32.5" y2="28"/><line x1="20" y1="20" x2="20" y2="36"/><line x1="20" y1="20" x2="7.5" y2="28"/><line x1="20" y1="20" x2="7.5" y2="12"/></g></svg>
+        <span class="font-display text-xl whitespace-nowrap">SPOKE<span class="text-[rgb(var(--secondary))]">&amp;</span>GEAR</span>
+      </a>
+      <nav class="flex items-center gap-6">
+        <div class="relative" data-dropdown>
+          <button type="button" class="nav-link flex items-center gap-1" data-dropdown-btn aria-haspopup="true" aria-expanded="false">
+            Home
+            <svg class="dropdown-caret" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="dropdown-panel">
+            <a href="index.html" class="dropdown-link">Home 1</a>
+            <a href="home-2.html" class="dropdown-link">Home 2</a>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="bikes.html" class="nav-link">Bikes</a>
+        <a href="services.html" class="nav-link">Repairs</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="flex items-center gap-2 pl-4 border-l border-[rgb(var(--border))] shrink-0">
+        <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode"><span data-theme-icon><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span></button>
+        <button class="icon-btn" data-dir-toggle aria-label="Toggle text direction"><span class="text-xs font-bold" data-dir-label>RTL</span></button>
+        <span data-auth-slot></span>
+        <a href="services.html#book" class="btn btn-primary btn-sm">Book a Repair <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-panel" class="xl:hidden">
+    <nav class="flex flex-col gap-1 px-4 pt-4">
+      <a href="index.html" class="mobile-link px-3 py-2.5 rounded-lg font-semibold hover:bg-[rgb(var(--surface-2))]">Home</a>
+      <a href="home-2.html" class="mobile-link px-3 py-2.5 rounded-lg font-semibold hover:bg-[rgb(var(--surface-2))]">Home 2</a>
+      <a href="about.html" class="mobile-link px-3 py-2.5 rounded-lg font-semibold hover:bg-[rgb(var(--surface-2))]">About</a>
+      <a href="bikes.html" class="mobile-link px-3 py-2.5 rounded-lg font-semibold hover:bg-[rgb(var(--surface-2))]">Bikes</a>
+      <a href="services.html" class="mobile-link px-3 py-2.5 rounded-lg font-semibold hover:bg-[rgb(var(--surface-2))]">Repairs</a>
+      <a href="gallery.html" class="mobile-link px-3 py-2.5 rounded-lg font-semibold hover:bg-[rgb(var(--surface-2))]">Gallery</a>
+      <a href="faq.html" class="mobile-link px-3 py-2.5 rounded-lg font-semibold hover:bg-[rgb(var(--surface-2))]">FAQ</a>
+      <a href="contact.html" class="mobile-link px-3 py-2.5 rounded-lg font-semibold hover:bg-[rgb(var(--surface-2))]">Contact</a>
+    </nav>
+    <div class="p-4 flex items-center flex-wrap justify-between gap-3">
+      <div class="flex items-center gap-1.5" id="mobile-icons-group">
+        <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode"><span data-theme-icon><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span></button>
+        <button class="icon-btn" data-dir-toggle aria-label="Toggle text direction"><span class="text-xs font-bold" data-dir-label>RTL</span></button>
+      </div>
+      <a href="services.html#book" class="btn btn-primary w-full justify-center">Book a Repair</a>
+      <span data-auth-slot class="flex-1 flex justify-end"></span>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+<section class="relative overflow-hidden">
+  <img src="assets/images/workshop-repair-closeup.jpg" alt="Close-up of a mechanic's hands servicing a bicycle wheel" class="absolute inset-0 w-full h-full object-cover" loading="eager">
+  <div class="absolute inset-0 bg-gradient-to-r from-[#0A101C]/95 via-[#0A101C]/82 to-[#0A101C]/45"></div>
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-16">
+    <div class="max-w-xl">
+      <nav class="text-white/70 text-xs mb-4" aria-label="Breadcrumb"><a href="index.html" class="hover:text-white">Home</a> <span class="mx-1">/</span> <span class="text-white">Gallery</span></nav>
+      <span class="inline-block text-[rgb(var(--secondary))] text-xs font-bold uppercase tracking-widest mb-3">Take A Look Around</span>
+      <h1 class="font-display text-3xl sm:text-4xl text-white mb-4">Inside The Shop</h1>
+      <p class="text-white/90 leading-relaxed">Bikes on the floor, tools on the wall, and the storefront on Millrace Lane.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Visitor Favorites (curated spotlight row, distinct from the grid below) -->
+<section class="py-16 sm:py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-xl mb-10" data-aos="fade-up">
+      <p class="text-[rgb(var(--secondary))] font-bold uppercase tracking-widest text-xs mb-3">Visitor Favorites</p>
+      <h2 class="font-display text-3xl sm:text-4xl">The three shots people ask about most</h2>
+    </div>
+    <div class="grid sm:grid-cols-3 gap-5">
+      <a href="assets/images/workshop-mechanic.jpg" class="glightbox group relative block rounded-2xl overflow-hidden h-72 zoom-img" data-glightbox="title: Mechanic at work in the repair bay" data-aos="fade-up">
+        <img src="assets/images/workshop-mechanic.jpg" alt="Mechanic standing beside a road bike inside the repair workshop" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
+        <p class="absolute bottom-4 left-4 right-4 text-white text-sm font-semibold">"That's Marcus, mid-tune-up" &mdash; the most photographed corner of the shop.</p>
+      </a>
+      <a href="assets/images/bike-mtb-cube-beach.jpg" class="glightbox group relative block rounded-2xl overflow-hidden h-72 zoom-img" data-glightbox="title: Ridgeback Trailhawk MTB" data-aos="fade-up" data-aos-delay="80">
+        <img src="assets/images/bike-mtb-cube-beach.jpg" alt="Ridgeback Trailhawk full-suspension mountain bike on a rocky shoreline" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
+        <p class="absolute bottom-4 left-4 right-4 text-white text-sm font-semibold">Our most-saved product shot &mdash; the Trailhawk, shoreline edition.</p>
+      </a>
+      <a href="assets/images/peloton-group-ride.jpg" class="glightbox group relative block rounded-2xl overflow-hidden h-72 zoom-img" data-glightbox="title: Saturday club ride" data-aos="fade-up" data-aos-delay="160">
+        <img src="assets/images/peloton-group-ride.jpg" alt="Group of road cyclists riding together in a peloton" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
+        <p class="absolute bottom-4 left-4 right-4 text-white text-sm font-semibold">The Saturday Millrace Loop crew, mid-pace-line.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Full gallery: filterable + paginated, 3x2 grid -->
+<section class="py-16 sm:py-20 bg-[rgb(var(--surface-2))]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-wrap items-end justify-between gap-6 mb-10" data-aos="fade-up">
+      <div>
+        <p class="text-[rgb(var(--secondary))] font-bold uppercase tracking-widest text-xs mb-3">Browse By Category</p>
+        <h2 class="font-display text-3xl sm:text-4xl">The full album</h2>
+      </div>
+      <div class="flex flex-wrap gap-2" role="tablist" aria-label="Filter gallery by category">
+        <button class="tab-btn is-active px-4 py-2 rounded-full font-semibold text-sm border border-[rgb(var(--border))]" data-filter-btn="all" role="tab" aria-selected="true">All Photos</button>
+        <button class="tab-btn px-4 py-2 rounded-full font-semibold text-sm border border-[rgb(var(--border))]" data-filter-btn="bikes" role="tab" aria-selected="false">Bikes</button>
+        <button class="tab-btn px-4 py-2 rounded-full font-semibold text-sm border border-[rgb(var(--border))]" data-filter-btn="workshop" role="tab" aria-selected="false">Workshop</button>
+        <button class="tab-btn px-4 py-2 rounded-full font-semibold text-sm border border-[rgb(var(--border))]" data-filter-btn="community" role="tab" aria-selected="false">Community</button>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4" data-paginate data-page-size="6">
+      <a href="assets/images/shop-storefront.jpg" class="glightbox block rounded-2xl overflow-hidden zoom-img aspect-[4/3]" data-filter-card="workshop" data-glightbox="title: Our storefront on Millrace Lane">
+        <img src="assets/images/shop-storefront.jpg" alt="Spoke and Gear bicycle shop storefront on Millrace Lane" class="w-full h-full object-cover" loading="lazy">
+      </a>
+      <a href="assets/images/workshop-frame-repair-stand-mentoring.jpg" class="glightbox block rounded-2xl overflow-hidden zoom-img aspect-[4/3]" data-filter-card="workshop" data-glightbox="title: Hands-on in the shop">
+        <img src="assets/images/workshop-frame-repair-stand-mentoring.jpg" alt="Two mechanics working together on a bike frame mounted on a repair stand in the workshop" class="w-full h-full object-cover" loading="lazy">
+      </a>
+      <a href="assets/images/bike-road-black-studio.jpg" class="glightbox block rounded-2xl overflow-hidden zoom-img aspect-[4/3]" data-filter-card="bikes" data-glightbox="title: Velostrada Alu Road, studio shot">
+        <img src="assets/images/bike-road-black-studio.jpg" alt="Matte black Velostrada Alu Road bike studio photograph" class="w-full h-full object-cover" loading="lazy">
+      </a>
+      <a href="assets/images/workshop-tools.jpg" class="glightbox block rounded-2xl overflow-hidden zoom-img aspect-[4/3]" data-filter-card="workshop" data-glightbox="title: Our tool wall">
+        <img src="assets/images/workshop-tools.jpg" alt="Wall of organised bicycle repair tools on a pegboard" class="w-full h-full object-cover" loading="lazy">
+      </a>
+      <a href="assets/images/bike-mtb-desert-grassland.jpg" class="glightbox block rounded-2xl overflow-hidden zoom-img aspect-[4/3]" data-filter-card="bikes" data-glightbox="title: Riders out on the high-desert trail">
+        <img src="assets/images/bike-mtb-desert-grassland.jpg" alt="Two mountain bikers pausing on a high-desert grassland trail with mountains in the distance" class="w-full h-full object-cover" loading="lazy">
+      </a>
+      <a href="assets/images/bike-kids-teal.jpg" class="glightbox block rounded-2xl overflow-hidden zoom-img aspect-[4/3]" data-filter-card="bikes" data-glightbox="title: Little Ranger kids bike">
+        <img src="assets/images/bike-kids-teal.jpg" alt="Teal Little Ranger 16 inch kids bike with training wheels" class="w-full h-full object-cover" loading="lazy">
+      </a>
+      <a href="assets/images/workshop-repair-hands-tire.jpg" class="glightbox block rounded-2xl overflow-hidden zoom-img aspect-[4/3]" data-filter-card="workshop" data-glightbox="title: Hands-on tire work">
+        <img src="assets/images/workshop-repair-hands-tire.jpg" alt="Close-up of hands removing a tire from a bicycle wheel rim" class="w-full h-full object-cover" loading="lazy">
+      </a>
+      <a href="assets/images/bike-mtb-bulls-park.jpg" class="glightbox block rounded-2xl overflow-hidden zoom-img aspect-[4/3]" data-filter-card="bikes" data-glightbox="title: Summit Wild Cup Trail">
+        <img src="assets/images/bike-mtb-bulls-park.jpg" alt="Summit Wild Cup Trail mountain bike parked beside a path" class="w-full h-full object-cover" loading="lazy">
+      </a>
+      <a href="assets/images/bike-orange-wall-yellow.jpg" class="glightbox block rounded-2xl overflow-hidden zoom-img aspect-[4/3]" data-filter-card="bikes" data-glightbox="title: Solstice Track single-speed">
+        <img src="assets/images/bike-orange-wall-yellow.jpg" alt="Black bicycle with yellow wheels against an orange wall" class="w-full h-full object-cover" loading="lazy">
+      </a>
+      <a href="assets/images/bike-fixie-teal-wall.jpg" class="glightbox block rounded-2xl overflow-hidden zoom-img aspect-[4/3]" data-filter-card="bikes" data-glightbox="title: Meridian City Road">
+        <img src="assets/images/bike-fixie-teal-wall.jpg" alt="Meridian City Road bike leaning against a dark teal wall" class="w-full h-full object-cover" loading="lazy">
+      </a>
+      <a href="assets/images/hero-road-cyclists.jpg" class="glightbox block rounded-2xl overflow-hidden zoom-img aspect-[4/3]" data-filter-card="community" data-glightbox="title: Weekend group ride">
+        <img src="assets/images/hero-road-cyclists.jpg" alt="Two cyclists riding road bikes along a coastal road" class="w-full h-full object-cover" loading="lazy">
+      </a>
+      <a href="assets/images/hero-mountain-sunset.jpg" class="glightbox block rounded-2xl overflow-hidden zoom-img aspect-[4/3]" data-filter-card="community" data-glightbox="title: Sunset climb">
+        <img src="assets/images/hero-mountain-sunset.jpg" alt="Cyclist riding a winding mountain road at sunset" class="w-full h-full object-cover" loading="lazy">
+      </a>
+      <a href="assets/images/cyclist-silhouette-sunset.jpg" class="glightbox block rounded-2xl overflow-hidden zoom-img aspect-[4/3]" data-filter-card="community" data-glightbox="title: Evening ride">
+        <img src="assets/images/cyclist-silhouette-sunset.jpg" alt="Cyclist silhouette riding through a field at sunset" class="w-full h-full object-cover" loading="lazy">
+      </a>
+      <a href="assets/images/bike-white-wall.jpg" class="glightbox block rounded-2xl overflow-hidden zoom-img aspect-[4/3]" data-filter-card="bikes" data-glightbox="title: Harbor Commuter Flat-Bar">
+        <img src="assets/images/bike-white-wall.jpg" alt="Silver commuter bike leaning against a white wall" class="w-full h-full object-cover" loading="lazy">
+      </a>
+      <a href="assets/images/peloton-group-ride.jpg" class="glightbox block rounded-2xl overflow-hidden zoom-img aspect-[4/3]" data-filter-card="community" data-glightbox="title: Saturday club ride">
+        <img src="assets/images/peloton-group-ride.jpg" alt="Group of road cyclists riding together in a peloton" class="w-full h-full object-cover" loading="lazy">
+      </a>
+      <a href="assets/images/hero-cloud-climb.jpg" class="glightbox block rounded-2xl overflow-hidden zoom-img aspect-[4/3]" data-filter-card="community" data-glightbox="title: Above the clouds">
+        <img src="assets/images/hero-cloud-climb.jpg" alt="Road cyclist climbing a mountain pass above the clouds" class="w-full h-full object-cover" loading="lazy">
+      </a>
+      <a href="assets/images/workshop-shop-storefront-wales.jpg" class="glightbox block rounded-2xl overflow-hidden zoom-img aspect-[4/3]" data-filter-card="workshop" data-glightbox="title: A fellow bicycle shopfront">
+        <img src="assets/images/workshop-shop-storefront-wales.jpg" alt="Charming small-town bicycle shop storefront with bikes displayed outside" class="w-full h-full object-cover" loading="lazy">
+      </a>
+      <a href="assets/images/workshop-repair-clinic-outdoor.jpg" class="glightbox block rounded-2xl overflow-hidden zoom-img aspect-[4/3]" data-filter-card="workshop" data-glightbox="title: Community repair clinic day">
+        <img src="assets/images/workshop-repair-clinic-outdoor.jpg" alt="Volunteers repairing bicycles on portable work stands at an outdoor repair clinic" class="w-full h-full object-cover" loading="lazy">
+      </a>
+      <a href="assets/images/community-mass-ride-parade.jpg" class="glightbox block rounded-2xl overflow-hidden zoom-img aspect-[4/3]" data-filter-card="community" data-glightbox="title: A city-wide cycling parade">
+        <img src="assets/images/community-mass-ride-parade.jpg" alt="Thousands of cyclists riding together along a wide boulevard at a cycling parade" class="w-full h-full object-cover" loading="lazy">
+      </a>
+    </div>
+
+    <nav data-pagination-nav class="flex items-center justify-center gap-2 mt-12" style="display:none" aria-label="Gallery pagination"></nav>
+  </div>
+</section>
+
+<!-- A Week At The Workshop (editorial day-by-day list, no cards) -->
+<section class="py-20 sm:py-24">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-xl mb-14" data-aos="fade-up">
+      <p class="text-[rgb(var(--secondary))] font-bold uppercase tracking-widest text-xs mb-3">Behind The Photos</p>
+      <h2 class="font-display text-3xl sm:text-4xl">A week at the workshop</h2>
+    </div>
+    <div class="divide-y divide-[rgb(var(--border))]">
+      <div class="flex flex-col sm:flex-row gap-2 sm:gap-8 py-6" data-aos="fade-up">
+        <span class="font-display text-lg text-[rgb(var(--secondary))] w-28 shrink-0">Monday</span>
+        <p class="text-[rgb(var(--ink-soft))]">Tune-up day &mdash; the stands fill up fast with bikes dropped off over the weekend.</p>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-2 sm:gap-8 py-6" data-aos="fade-up" data-aos-delay="60">
+        <span class="font-display text-lg text-[rgb(var(--secondary))] w-28 shrink-0">Wednesday</span>
+        <p class="text-[rgb(var(--ink-soft))]">New bike deliveries get unboxed, assembled and torque-checked before they hit the floor.</p>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-2 sm:gap-8 py-6" data-aos="fade-up" data-aos-delay="120">
+        <span class="font-display text-lg text-[rgb(var(--secondary))] w-28 shrink-0">Friday</span>
+        <p class="text-[rgb(var(--ink-soft))]">Pickup day &mdash; ready-for-pickup tickets clear out before the weekend rush.</p>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-2 sm:gap-8 py-6" data-aos="fade-up" data-aos-delay="180">
+        <span class="font-display text-lg text-[rgb(var(--secondary))] w-28 shrink-0">Saturday</span>
+        <p class="text-[rgb(var(--ink-soft))]">The Millrace Loop group ride rolls out of our lot at 8 AM, rain or shine.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tag Us To Be Featured (social band) -->
+<section class="py-20 sm:py-24 bg-black text-center">
+  <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="w-14 h-14 rounded-full bg-white/10 border border-white/20 flex items-center justify-center mx-auto mb-6" data-aos="zoom-in">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="rgb(var(--accent))" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+    </div>
+    <p class="text-[rgb(var(--secondary))] font-bold uppercase tracking-widest text-xs mb-3" data-aos="fade-up">Tag Us To Be Featured</p>
+    <h2 class="font-display text-2xl sm:text-3xl text-white mb-5" data-aos="fade-up" data-aos-delay="60">#SpokeAndGearAshbrook</h2>
+    <p class="text-white/60 mb-8" data-aos="fade-up" data-aos-delay="120">Post a photo of your ride, tag us, and we'll add our favourites to this gallery every month.</p>
+    <a href="contact.html" class="btn btn-primary" data-aos="fade-up" data-aos-delay="180">Share Your Story <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+</section>
+
+<section class="py-16">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 bg-[rgb(var(--primary))] rounded-3xl p-10 sm:p-14 text-center" data-aos="zoom-in">
+    <h2 class="font-display text-2xl sm:text-3xl text-white mb-3">Want to see it in person?</h2>
+    <p class="text-white/70 mb-8 max-w-md mx-auto">Drop by 482 Millrace Lane any day we're open — no appointment needed to browse the floor.</p>
+    <a href="contact.html" class="btn btn-light">Get Directions</a>
+  </div>
+</section>
+</main>
+
+<footer class="bg-[#0A101C] text-white">
+  <div class="tread-divider"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <a href="index.html" class="flex items-center gap-2 mb-4">
+        <svg width="28" height="28" viewBox="0 0 40 40" fill="none" class="shrink-0"><circle cx="20" cy="20" r="17" stroke="white" stroke-width="2.5" opacity=".9"/><circle cx="20" cy="20" r="3.2" fill="rgb(var(--secondary))"/><g stroke="white" stroke-width="1.4" opacity=".55"><line x1="20" y1="20" x2="20" y2="4"/><line x1="20" y1="20" x2="32.5" y2="12"/><line x1="20" y1="20" x2="32.5" y2="28"/><line x1="20" y1="20" x2="20" y2="36"/><line x1="20" y1="20" x2="7.5" y2="28"/><line x1="20" y1="20" x2="7.5" y2="12"/></g></svg>
+        <span class="font-display text-lg text-white">SPOKE<span class="text-[rgb(var(--secondary))]">&amp;</span>GEAR</span>
+      </a>
+      <p class="text-sm text-white/60 leading-relaxed mb-5">Ashbrook's neighbourhood bicycle workshop — honest repairs, real-time status updates, and bikes for every rider since 2014.</p>
+      <div class="flex gap-3">
+        <a href="#" class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center hover:border-[rgb(var(--secondary))] hover:text-[rgb(var(--secondary))] transition-colors" aria-label="Instagram"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a href="#" class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center hover:border-[rgb(var(--secondary))] hover:text-[rgb(var(--secondary))] transition-colors" aria-label="Facebook"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 9h3V6h-3a3 3 0 0 0-3 3v2H8v3h3v6h3v-6h3l1-3h-4V9a1 1 0 0 1 1-1z"/></svg></a>
+        <a href="#" class="w-9 h-9 rounded-full border border-white/20 flex items-center justify-center hover:border-[rgb(var(--secondary))] hover:text-[rgb(var(--secondary))] transition-colors" aria-label="Strava"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linejoin="round" d="M9 3l6 12h-4l-2-4-2 4H3zM13.5 15l2 4 2-4"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h3 class="font-bold mb-4 text-sm uppercase tracking-wider text-white/80">Shop</h3>
+      <ul class="space-y-2.5 text-sm text-white/60">
+        <li><a href="bikes.html#road" class="hover:text-white">Road Bikes</a></li>
+        <li><a href="bikes.html#mountain" class="hover:text-white">Mountain Bikes</a></li>
+        <li><a href="bikes.html#kids" class="hover:text-white">Kids' Bikes</a></li>
+        <li><a href="bike-details.html" class="hover:text-white">Featured: Trailhawk MTB</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-bold mb-4 text-sm uppercase tracking-wider text-white/80">Repair Services</h3>
+      <ul class="space-y-2.5 text-sm text-white/60">
+        <li><a href="services.html#tune-up" class="hover:text-white">Full Tune-Up</a></li>
+        <li><a href="services.html#suspension" class="hover:text-white">Suspension Service</a></li>
+        <li><a href="services.html#overhaul" class="hover:text-white">Annual Overhaul</a></li>
+        <li><a href="login.html" class="hover:text-white">Track a Repair</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-bold mb-4 text-sm uppercase tracking-wider text-white/80">Look Up a Ticket</h3>
+      <p class="text-sm text-white/60 mb-3">Enter your ticket number to sign in and view live status.</p>
+      <form id="ticket-lookup-form" class="flex gap-2">
+        <label for="ticket-lookup-input" class="sr-only">Ticket number</label>
+        <input id="ticket-lookup-input" type="text" placeholder="SG-10482" class="min-w-0 flex-1 rounded-lg bg-white/10 border border-white/15 px-3 py-2 text-sm placeholder:text-white/40 focus:outline-none focus:border-[rgb(var(--secondary))]">
+        <button class="btn btn-primary btn-sm shrink-0" type="submit">Go</button>
+      </form>
+      <p class="text-sm text-white/60 mt-5">482 Millrace Lane, Ashbrook<br>(555) 019-2244</p>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/50">
+      <p>&copy; 2026 Spoke &amp; Gear Bicycle Co. All rights reserved.</p>
+      <div class="flex items-center gap-5">
+        <a href="faq.html" class="hover:text-white">FAQ</a>
+        <a href="contact.html" class="hover:text-white">Contact</a>
+        <a href="404.html" class="hover:text-white">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
