@@ -27,7 +27,6 @@
       <div class="flex items-center gap-2">
         <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode"><span data-theme-icon><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="w-5 h-5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span></button>
         <button class="icon-btn" data-dir-toggle aria-label="Toggle text direction"><span class="text-xs font-bold" data-dir-label>RTL</span></button>
-        <a href="index.html" class="btn btn-outline btn-sm hidden sm:inline-flex">Back to Site</a>
       </div>
     </div>
   </div>
@@ -37,11 +36,11 @@
 <section class="min-h-[calc(100vh-5rem)] grid lg:grid-cols-2">
   <!-- Brand panel -->
   <div class="relative hidden lg:block">
-    <img src="assets/images/workshop-mechanic.jpg" alt="Mechanic standing with a road bike inside the Spoke and Gear workshop" class="absolute inset-0 w-full h-full object-cover">
+    <img src="assets/images/workshop-frame-repair-stand-mentoring.jpg" alt="Two mechanics working together on a bike frame mounted on a repair stand in the Spoke and Gear workshop" class="absolute inset-0 w-full h-full object-cover">
     <div class="absolute inset-0 bg-gradient-to-t from-[#0A101C]/95 via-[#0A101C]/60 to-[#0A101C]/30"></div>
-    <div class="relative h-full flex flex-col justify-end p-12">
-      <div class="status-pill status-service mb-6 w-max"><span class="dot"></span>Live example: SG-10471 &middot; Being Serviced</div>
-      <blockquote class="font-display text-2xl sm:text-3xl text-white leading-snug mb-6 max-w-md">"I watched my Trailhawk go from queue to ready-for-pickup without a single phone call."</blockquote>
+    <div class="relative h-full flex flex-col items-center justify-end text-center p-12">
+      <div class="status-pill status-service mb-6 mx-auto"><span class="dot"></span>Live example: SG-10471 &middot; Being Serviced</div>
+      <blockquote class="font-display text-2xl sm:text-3xl text-white leading-snug mb-6 max-w-md mx-auto">"I watched my Trailhawk go from queue to ready-for-pickup without a single phone call."</blockquote>
       <p class="text-white/70 text-sm">&mdash; Owen Marsh, Spoke &amp; Gear customer since 2021</p>
     </div>
   </div>
@@ -49,18 +48,8 @@
   <!-- Login form -->
   <div class="flex items-center justify-center p-6 sm:p-14">
     <div class="w-full max-w-md">
-      <h1 class="font-display text-3xl mb-2">Welcome Back</h1>
-      <p class="text-[rgb(var(--ink-soft))] mb-8">Sign in to track your repairs and view your history.</p>
-
-      <div class="spoke-card cat-repair p-4 mb-8">
-        <div class="accent-bar"></div>
-        <p class="text-xs font-bold uppercase tracking-wide text-[rgb(var(--secondary))] mb-1">Try the demo account</p>
-        <p class="text-sm text-[rgb(var(--ink-soft))] mb-3">See a real dashboard with live repair tickets and receipt history.</p>
-        <div class="flex items-center justify-between gap-3">
-          <p class="font-mono text-xs">demo@spokeandgear.com / demo1234</p>
-          <button type="button" data-fill-demo class="btn btn-outline btn-sm shrink-0">Use It</button>
-        </div>
-      </div>
+      <h1 class="font-display text-3xl mb-2 text-center">Welcome Back</h1>
+      <p class="text-[rgb(var(--ink-soft))] mb-8 text-center">Sign in to track your repairs and view your history.</p>
 
       <p id="login-error" class="hidden rounded-lg bg-[rgb(var(--secondary)/.12)] text-[rgb(var(--secondary))] text-sm px-4 py-3 mb-5" role="alert"></p>
 

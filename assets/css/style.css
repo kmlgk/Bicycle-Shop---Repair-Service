@@ -350,6 +350,12 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 .field-invalid input,.field-invalid textarea,.field-invalid select{ border-color:rgb(var(--secondary)) !important; }
 .field-success{ border-color:rgb(var(--status-ready)) !important; }
 
+/* Native form control icons (date picker, select arrow) are drawn black by the
+   browser and stay black regardless of page background — tell the browser to
+   render them for a dark surface instead. */
+:root[data-theme="dark"] input[type="date"],
+:root[data-theme="dark"] select{ color-scheme:dark; }
+
 /* Accordion (FAQ) */
 .accordion-btn[aria-expanded="true"] .accordion-icon{ transform:rotate(45deg); }
 .accordion-icon{ transition:transform .3s ease; }
