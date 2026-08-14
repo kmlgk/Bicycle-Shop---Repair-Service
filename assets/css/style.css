@@ -315,6 +315,12 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 @keyframes marquee{ from{ transform:translateX(0);} to{ transform:translateX(-50%);} }
 [dir="rtl"] .marquee-track{ animation-direction:reverse; }
 
+/* CTA banner (Home 1, above footer) — flip overlay + alignment for RTL */
+[dir="rtl"] .cta-banner-overlay{ background-image:linear-gradient(to left, var(--tw-gradient-stops)); }
+@media (min-width:640px){
+  [dir="rtl"] .cta-banner-text{ text-align:right; }
+}
+
 /* Route-draw SVG line animation (About) */
 .route-path{
   stroke-dasharray:1400; stroke-dashoffset:1400;
